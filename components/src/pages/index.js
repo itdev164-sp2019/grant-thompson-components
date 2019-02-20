@@ -1,10 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import {Address, Button} from "../components/Element"
+import Layout from '../components/layout'
+import Image from '../components/image'
+import SEO from '../components/seo'
+import { Button, IconButton, Section } from '../components/Element'
+import { Search } from 'styled-icons/feather'
 
 const IndexPage = () => (
   <Layout>
@@ -15,11 +16,11 @@ const IndexPage = () => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Address>
-      My address is 123 sleepy hallow.
-      <Button variant="primary">Contact Me</Button>
-    </Address>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Section flex justifyContent="space-evenly" m={2}>
+      <Link to="/page-2/">Go to page 2</Link>
+      <Button variant="primary">My Custom Button!</Button>
+      <IconButton icon={<Search />} />
+    </Section>
   </Layout>
 )
 
