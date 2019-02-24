@@ -99,7 +99,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "grantt.itdev164/components/masthead@1.0.0": {
+    "grantt.itdev164/components/masthead@1.0.1": {
         "files": [
             {
                 "relativePath": "src/components/Masthead/Masthead.js",
