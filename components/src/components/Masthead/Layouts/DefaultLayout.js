@@ -6,6 +6,7 @@ import { MenuButton, SearchButton} from '../../Buttons'
 
 const StyledHeader = styled(Header)`
 ${props => props.theme.defaults.masthead};
+
 `
 
 const Item = ({children, ...props}) => (
@@ -14,7 +15,9 @@ const Item = ({children, ...props}) => (
 
 Item.defaultProps = {
     my: 'auto',
-    mr: 3
+    mr: 3,
+    
+    //bg: '#b23455'
 }
 
 export const DefaultLayout = ({image}) => (
@@ -25,10 +28,12 @@ export const DefaultLayout = ({image}) => (
             </Item>
         </Section>
         <Section flex width={[4/12,1/3,1/3]} justifyContent="center">
-            <img src={image} alt="" />
+            <Item>
+                <img src={image} alt="" />
+            </Item>
         </Section>
         <Section flex width={[8/12, 1/3, 1/3]} justifyContent="flex-end">
-            <Item>
+            <Item >
                 <SearchButton variant="contrast" />
             </Item>
             <Item>

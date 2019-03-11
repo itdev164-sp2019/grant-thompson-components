@@ -5,6 +5,8 @@ import { ButtonBase } from './ButtonBase'
 
 const StyledButton = styled(ButtonBase)`
   ${props => props.theme.variants.iconButton[props.variant || 'primary']};
+  color: limegreen;
+  &:hover {color: blue;};
 `
 
 export const IconButton = styled(({ icon, ...props }) => {
