@@ -1,4 +1,5 @@
-import React from 'react'
+// @flow
+import * as React from 'react';
 import PropTypes from 'prop-types'
 import { Button } from 'rebass'
 import styled from 'styled-components'
@@ -11,7 +12,15 @@ const Reset = styled(Button)`
   cursor: pointer;
 `
 
-export const ButtonBase = ({ children, ...props }) => (
+
+export const ButtonBase = ({ 
+  children,
+   ...props
+   }:
+   {
+     children: React.Node,
+     props: any
+   }) => (
   <Reset {...props}>{children}</Reset>
 )
 

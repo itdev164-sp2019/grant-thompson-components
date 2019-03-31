@@ -1,11 +1,17 @@
+// @flow
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Box} from 'rebass'
 import styled from 'styled-components'
 //import { Link } from 'rebass'
 
+type Props = {
+    children: PropTypes.node,
+    height: string
+}
+
 const Outer = styled(Box)`
-height: ${props => props.height};
+height: ${(props: Props) => props.height};
 width: 100%;
 position: fixed;
 top: 0px;
@@ -17,7 +23,14 @@ z-index: 9999;
 // text-decoration: none;
 // `
 
-export const Masthead = ({ height, children}) => {
+export const Masthead = ({ 
+    height,
+    children
+    }:
+    {
+        height: string,
+        children: PropTypes.node
+    }) => {
     return (
         <Outer height={height}>
             {children}
