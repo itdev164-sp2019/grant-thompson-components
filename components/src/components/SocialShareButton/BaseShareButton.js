@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react'
 import PropTypes from 'prop-types'
 
-export const BaseShareButton =({
+export const BaseShareButton = ({
     linkTitle,
     linkClassName,
     linkEventLabel,
     addThisPubId,
-    googleAnalyticsId,
+    //googleAnalyticsId,
     contentTitle,
     contentImage,
     contentDescription,
@@ -16,7 +16,7 @@ export const BaseShareButton =({
     const src = '//s7.addthis.com/js/300/addthis_widget.js#pubid=' + addThisPubId
     const options = {
         config: {
-            data_ga_propety: googleAnalyticsId,
+            //data_ga_propety: googleAnalyticsId,
             data_ga_social: true,
             ui_click: true,
         },
@@ -31,7 +31,7 @@ export const BaseShareButton =({
             },
             title: contentTitle,
             media: contentImage,
-            description: contentDescription
+            description: contentDescription,
         },
     }
 
@@ -52,7 +52,8 @@ export const BaseShareButton =({
         if (document.getElementById(id)) return
 
         const script = document.createElement('script')
-        script.id = idscript.src = src
+        script.id = id
+        script.src = src
         script.async = true
         document.body.appendChild(script)
     }, [])
@@ -75,7 +76,7 @@ export const BaseShareButton =({
         linkClassName: PropTypes.string.isRequired,
         linkEventLabel: PropTypes.string.isRequired,
         addThisPubId: PropTypes.string.isRequired,
-        googleAnalyticsId: PropTypes.string.isRequired,
+        //googleAnalyticsId: PropTypes.string.isRequired,
         contentTitle: PropTypes.string.isRequired,
         contentImage: PropTypes.string.isRequired,
         contentDescription: PropTypes.string.isRequired,

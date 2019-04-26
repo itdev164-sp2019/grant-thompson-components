@@ -6,7 +6,7 @@ import{
     FacebookShareButton,
     TwitterShareButton,
     MoreShareButton,
-} from '.index'
+} from './index'
 
 export const ShareButtonList = props => (
     <Flex flexDirection="column">
@@ -18,7 +18,7 @@ export const ShareButtonList = props => (
 
 ShareButtonList.propTypes = {
     addThisPubId: PropTypes.string.isRequired,
-    googleAnalyticsId: PropTypes.string.isRequired,
+    //googleAnalyticsId: PropTypes.string.isRequired,
     contentTitle: PropTypes.string.isRequired,
     contentImage: PropTypes.string.isRequired,
     contentDescription: PropTypes.string.isRequired,

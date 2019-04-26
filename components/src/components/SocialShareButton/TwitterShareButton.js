@@ -28,7 +28,7 @@ const linkTitle = 'Tweet this on Twitter',
 
     TwitterShareButton.propTypes = {
         addThisPubId: PropTypes.string.isRequired,
-        googleAnalyticsId: PropTypes.string.isRequired,
+        //googleAnalyticsId: PropTypes.string.isRequired,
         contentTitle: PropTypes.string.isRequired,
         contentImage: PropTypes.string.isRequired,
         contentDescription: PropTypes.string.isRequired,

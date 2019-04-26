@@ -6,7 +6,7 @@ import Image from '../gatsby-components/image'
 import SEO from '../gatsby-components/seo'
 import { IconButton, Section, LinkButton } from '../components/Element'
 import { Search } from 'styled-icons/feather'
-import ShareButtonList from '../components/SocialShareButton'
+import {ShareButtonList} from '../components/SocialShareButton'
 
 const IndexPage = () => (
   <Layout>

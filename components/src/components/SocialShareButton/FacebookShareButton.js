@@ -26,9 +26,9 @@ const linkTitle = 'Share this on Facebook',
         </BaseShareButton>
     )
 
-    TwitterShareButton.propTypes = {
+    FacebookShareButton.propTypes = {
         addThisPubId: PropTypes.string.isRequired,
-        googleAnalyticsId: PropTypes.string.isRequired,
+        //googleAnalyticsId: PropTypes.string.isRequired,
         contentTitle: PropTypes.string.isRequired,
         contentImage: PropTypes.string.isRequired,
         contentDescription: PropTypes.string.isRequired,
